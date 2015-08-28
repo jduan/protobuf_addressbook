@@ -44,7 +44,7 @@ except IOError:
   print("Couldn't open file. Creating a new one")
 
 # add an address
-prompt_for_address(address_book.person.add())
+prompt_for_address(address_book.people.add())
 
 # write the new address book back to disk
 with open(address_book_file, "wb") as fd:

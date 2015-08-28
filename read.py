@@ -4,7 +4,7 @@ import addressbook_pb2
 
 
 def list_people(address_book):
-  for person in address_book.person:
+  for person in address_book.people:
     print("Person ID: %s" % person.id)
     print("Person name: %s" % person.name)
     if person.HasField('email'):
